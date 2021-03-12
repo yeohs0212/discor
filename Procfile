@@ -1,1 +1,1 @@
-worker:python bot.py
+worker:python junsub_bot.py
