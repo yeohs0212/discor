@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 import datetime
 import time
@@ -67,6 +68,5 @@ async def on_message(message):
         embed.add_field(name="'ㅋㅋㅋ'", value="준섭이가 같이 웃어줍니다", inline=False)
         embed.add_field(name="'화생방'", value="준섭이가 화생방 훈련을 합니다", inline=False)
         await message.channel.send(embed=embed)
-
- 
-client.run('NzQ1MTk2ODE5NzAwNTE0ODQ2.XzuQng.VVxrQupqGPff309VdTbNU3IjGAw')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
